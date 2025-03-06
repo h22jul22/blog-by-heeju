@@ -1,6 +1,6 @@
 import NavBar from '@/components/navbar';
-import './globals.css';
 import localFont from 'next/font/local';
+import './globals.css';
 
 const moveSans = localFont({
   src: '../../public/fonts/MoveSans-Medium.ttf',
@@ -19,7 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='ko'>
-      <body className={`${moveSans.variable} ${moveSansBold.variable}`}>
+      <body className={`${moveSans.variable} ${moveSansBold.variable} mx-auto min-h-screen max-w-[600px] bg-white`}>
         <header>
           <NavBar />
         </header>

@@ -1,3 +1,9 @@
+import WordCloud from '@/components/word-cloud';
+
 export default function Home() {
-  return <div>hello</div>;
+  return (
+    <div>
+      <WordCloud />
+    </div>
+  );
 }
