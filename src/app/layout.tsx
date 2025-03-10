@@ -2,14 +2,14 @@ import NavBar from '@/components/navbar';
 import localFont from 'next/font/local';
 import './globals.css';
 
-const moveSans = localFont({
-  src: '../../public/fonts/MoveSans-Medium.ttf',
-  variable: '--font-moveSans',
+const SeoulHangang = localFont({
+  src: '../../public/fonts/SeoulHangangM.ttf',
+  variable: '--font-SeoulHangang',
 });
 
-const moveSansBold = localFont({
-  src: '../../public/fonts/MoveSans-Bold.ttf',
-  variable: '--font-moveSans-bold',
+const SeoulHangangBold = localFont({
+  src: '../../public/fonts/SeoulHangangB.ttf',
+  variable: '--font-SeoulHangang-bold',
 });
 
 export default function RootLayout({
@@ -19,10 +19,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='ko'>
-      <body className={`${moveSans.variable} ${moveSansBold.variable} mx-auto min-h-screen max-w-[600px] bg-white`}>
-        <header>
-          <NavBar />
-        </header>
+      <body className={`${SeoulHangang.variable} ${SeoulHangangBold.variable} min-h-screen`}>
+        <header>{/* <NavBar /> */}</header>
         {children}
       </body>
     </html>

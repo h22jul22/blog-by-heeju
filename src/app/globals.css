@@ -6,8 +6,8 @@
 }
 
 @theme {
-  --font-moveSans: 'moveSans';
-  --font-moveSans-bold: 'moveSans-bold';
+  --font-SeoulHangang: 'SeoulHangang';
+  --font-SeoulHangang-bold: 'SeoulHangang-bold';
 }
 
 /* @media (prefers-color-scheme: dark) {
