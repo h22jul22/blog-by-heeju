@@ -1,9 +1,5 @@
-import MainIndex from '@/components/main-index';
+import MainContainer from '@/components/main/main-container';
 
 export default function Home() {
-  return (
-    <>
-      <MainIndex />
-    </>
-  );
+  return <MainContainer />;
 }
