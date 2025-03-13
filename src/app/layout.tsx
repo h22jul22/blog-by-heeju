@@ -1,4 +1,3 @@
-import NavBar from '@/components/navbar';
 import localFont from 'next/font/local';
 import './globals.css';
 
@@ -19,10 +18,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='ko'>
-      <body className={`${SeoulHangang.variable} ${SeoulHangangBold.variable} min-h-screen`}>
-        <header>{/* <NavBar /> */}</header>
-        {children}
-      </body>
+      <body className={`${SeoulHangang.variable} ${SeoulHangangBold.variable} min-h-screen`}>{children}</body>
     </html>
   );
 }
