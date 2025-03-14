@@ -2,7 +2,7 @@ import { MdMenu, MdLightMode, MdOutlineSearch } from 'react-icons/md';
 
 export default function NavBar() {
   return (
-    <div className='flex h-16 items-center justify-start border-b border-gray-100'>
+    <div className='flex h-16 items-center justify-start border-b border-gray-100 shadow-sm'>
       <button className='h-full cursor-pointer p-3'>
         <MdMenu size={24} fill='gray' />
       </button>
