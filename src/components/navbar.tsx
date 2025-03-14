@@ -1,13 +1,17 @@
-import Image from 'next/image';
-import Link from 'next/link';
+import { MdMenu, MdLightMode, MdOutlineSearch } from 'react-icons/md';
 
 export default function NavBar() {
   return (
-    <div className='mx-4 flex h-16 items-center'>
-      <Link href='/'>
-        <Image src='/icons/justory.jpeg' width={86} height={34} alt='justory 로고' />
-      </Link>
-      <div className='flex-grow'></div>
+    <div className='flex h-16 items-center justify-start border-b border-gray-100'>
+      <button className='h-full cursor-pointer p-3'>
+        <MdMenu size={24} fill='gray' />
+      </button>
+      <button className='h-full cursor-pointer p-3'>
+        <MdLightMode size={24} fill='gray' />
+      </button>
+      <button className='h-full cursor-pointer p-3'>
+        <MdOutlineSearch size={24} fill='gray' />
+      </button>
     </div>
   );
 }

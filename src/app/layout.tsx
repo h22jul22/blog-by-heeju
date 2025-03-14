@@ -1,6 +1,7 @@
 import localFont from 'next/font/local';
 import './globals.css';
 import SidebarContainer from '@/components/sidebar/sidebar-container';
+import NavBar from '@/components/navbar';
 
 const SeoulHangang = localFont({
   src: '../../public/fonts/SeoulHangangM.ttf',
@@ -22,7 +23,10 @@ export default function RootLayout({
       <body className={`${SeoulHangang.variable} ${SeoulHangangBold.variable} min-h-screen`}>
         <main className='flex min-h-screen'>
           <SidebarContainer />
-          <section className='min-h-screen flex-1'>{children}</section>
+          <section className='min-h-screen flex-1'>
+            <NavBar />
+            {children}
+          </section>
         </main>
       </body>
     </html>
