@@ -9,7 +9,7 @@ const SeoulHangang = localFont({
 });
 
 const SeoulHangangBold = localFont({
-  src: '../../public/fonts/SeoulHangangB.ttf',
+  src: '../../public/fonts/SeoulHangangEB.ttf',
   variable: '--font-SeoulHangang-bold',
 });
 

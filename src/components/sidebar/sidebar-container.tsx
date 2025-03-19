@@ -30,7 +30,7 @@ export default function SidebarContainer() {
         className={`h-screen object-cover ${isSidebarOpen ? 'absolute w-full' : 'fixed w-[10px]'} transition-all duration-300`}
       />
       <div
-        className={`font-SeoulHangang flex h-screen ${isSidebarOpen ? 'absolute w-full opacity-100' : 'fixed w-[10px] opacity-0'} flex-col items-center justify-center gap-8 text-white transition-opacity duration-300 hover:cursor-grab`}
+        className={`font-SeoulHangang-bold flex h-screen ${isSidebarOpen ? 'absolute w-full opacity-100' : 'fixed w-[10px] opacity-0'} flex-col items-center justify-center gap-8 text-white transition-opacity duration-300 hover:cursor-grab`}
         onClick={sidebarHandler}
       >
         {isSidebarOpen && (
