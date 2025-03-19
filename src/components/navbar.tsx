@@ -2,9 +2,9 @@ import { MdMenu, MdLightMode, MdOutlineSearch } from 'react-icons/md';
 
 export default function NavBar() {
   const BUTTON_STYLE =
-    'h-full cursor-pointer p-3 border-r border-gray-200 hover:bg-linear-to-r from-transparent via-gray-100 to-[#ECEEF0]';
+    'h-full cursor-pointer p-3 border-r border-gray-200 hover:bg-linear-to-r from-transparent via-gray-50 to-gray-100';
   return (
-    <div className='flex h-[75px] items-center justify-start border-b border-gray-100 shadow-sm'>
+    <div className='flex h-[75px] items-center justify-start border-b border-gray-100 bg-white shadow-sm'>
       <button className={BUTTON_STYLE}>
         <MdMenu size={24} fill='#a7a7a7' />
       </button>

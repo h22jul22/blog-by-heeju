@@ -20,10 +20,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='ko'>
-      <body className={`${SeoulHangang.variable} ${SeoulHangangBold.variable} min-h-screen`}>
-        <main className='flex min-h-screen'>
+      <body className={`${SeoulHangang.variable} ${SeoulHangangBold.variable} mx-auto min-h-screen`}>
+        <main className='relative flex'>
           <SidebarContainer />
-          <section className='min-h-screen flex-1'>
+          <section className='ml-[10px] flex-1'>
             <NavBar />
             {children}
           </section>
