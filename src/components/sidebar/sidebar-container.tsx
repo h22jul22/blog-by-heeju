@@ -5,6 +5,7 @@ import SidebarProfile from '../sidebar/sidebar-profile';
 import SidebarIndex from '../sidebar/sidebar-index';
 import SidebarIcons from '../sidebar/sidebar-icons';
 import { useSidebarStore } from '@/config/store';
+import { useEffect } from 'react';
 
 export default function SidebarContainer() {
   const { isSidebarOpen, setSidebarOpen } = useSidebarStore();
@@ -12,6 +13,22 @@ export default function SidebarContainer() {
   const sidebarHandler = () => {
     setSidebarOpen(!isSidebarOpen);
   };
+
+  useEffect(() => {
+    if (isSidebarOpen) {
+      const handleWheel = (e: WheelEvent) => {
+        if (e.deltaY > 0) {
+          sidebarHandler();
+        }
+      };
+
+      window.addEventListener('wheel', handleWheel);
+
+      return () => {
+        window.removeEventListener('wheel', handleWheel);
+      };
+    }
+  }, [isSidebarOpen, sidebarHandler]);
 
   return (
     <aside
